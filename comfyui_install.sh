@@ -16,11 +16,21 @@ else
     echo "$cdir/ComfyUI existed!"
 fi
 
-cd $cdir/ComfyUI/custom
+cd $cdir/ComfyUI/
+pip install -r $cdir/ComfyUI/requirements.txt -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+
+cd $cdir/ComfyUI/custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
 git clone https://github.com/XLabs-AI/x-flux-comfyui.git
 git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+git clone https://github.com/city96/ComfyUI-GGUF.git
 
+pip install -r $cdir/ComfyUI/custom_nodes/ComfyUI-Impact-Pack//requirements.txt
+pip install -r $cdir/ComfyUI/custom_nodes/ComfyUI-GGUF/requirements.txt
+
+cd $cdir/ComfyUI/
+
+# python main.py
 
 pwd
