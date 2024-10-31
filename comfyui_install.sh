@@ -40,6 +40,9 @@ cd $cdir/ComfyUI/models/clip
 wget -c https://hf-mirror.com/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors?download=true -O clip_l.safetensors
 wget -c https://hf-mirror.com/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors?download=true -O t5xxl_fp8_e4m3fn.safetensors
 
+cd $cdir/ComfyUI/models/vae
+wget -c https://hf-mirror.com/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors?download=true -O ae.safetensors
+
 cd $cdir/ComfyUI/models/clip_vision
 wget -c https://hf-mirror.com/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors -O CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
 wget -c https://hf-mirror.com/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors -O CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors
