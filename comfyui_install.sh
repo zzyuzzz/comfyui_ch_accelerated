@@ -25,6 +25,11 @@ git clone https://github.com/XLabs-AI/x-flux-comfyui.git
 git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 git clone https://github.com/city96/ComfyUI-GGUF.git
 
+cd $cdir/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Subpack impact_subpack
+# python install-manual.py
+cd $cdir
+
 pip install -r $cdir/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
 pip install -r $cdir/ComfyUI/custom_nodes/ComfyUI-GGUF/requirements.txt
 
